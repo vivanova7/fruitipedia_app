@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 
-from fruit_app.profiles.forms import CreateProfileForm, ProfileEditForm
+from fruit_app.profiles.forms import CreateProfileForm
 from fruit_app.profiles.models import Profile
 from fruit_app.web.views import get_profile
 from django.views import generic as views

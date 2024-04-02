@@ -38,15 +38,3 @@ class CreateProfileForm(forms.ModelForm):
             'password': '',
         }
 
-class ProfileEditForm(forms.ModelForm):
-    class Meta:
-        model = Profile
-        fields = ['first_name', 'last_name', 'profile_picture', 'age']
-
-
-        labels = {
-            'first_name': 'First Name:',
-            'last_name': 'Last Name:',
-            'profile_picture': 'Image URL:',
-            'age': 'Age:',
-        }
