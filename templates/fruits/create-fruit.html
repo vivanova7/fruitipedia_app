@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main_content %}
+        <!-- Add Fruit Form -->
+        <section id="create">
+            <div class="form">
+                <h2>Add Fruit</h2>
+                <form {% url "add_fruit"  %} method="post">
+                    {{ form.as_p }}
+                    <button type="submit">Add Fruit</button>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}
